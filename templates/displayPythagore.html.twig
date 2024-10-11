@@ -1,4 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block content %} 
+        <style>
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 10px;
+                    text-align: center;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+                <H1>GOHI Ange Marlène</H1> 
+                {{tableHtml|raw}}      
+            </div>
+{% endblock %}
 
