@@ -10,18 +10,18 @@ class PythagoreUtility
     {
         $html = '<table>';
         
-        for ($i = 0; $i <= 10; $i++) {
+        for ($row = 0; $row<= 10; $row++) {
             $html .= '<tr>';
-            for ($j = 0; $j <= 10; $j++) {
+            for ($column = 0; $column <= 10; $column++) {
                 $html .= '<td>';
-                if($i === 0){
-                    $html .= $j;
-                }else if($j === 0){
-                    $html .= $i;
-                }else if($i === $j){
+                if($row === 0){
+                    $html .= $column;
+                }else if($column === 0){
+                    $html .= $row;
+                }else if($row === $column){
                     $html .= 'X';
                 }else{
-                    $html .= $i * $j;
+                    $html .= $row * $column;
                 }
                 $html .= '</td>';
             }
